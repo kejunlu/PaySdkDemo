@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void pay(){
-        Servicemanager.getInstance().pay("123456", new PayCallback() {
+        Servicemanager.getInstance().pay("orderId", new PayCallback() {
             @Override
             public void callback(String data) {
                 Toast.makeText(MainActivity.this, data, Toast.LENGTH_SHORT).show();
